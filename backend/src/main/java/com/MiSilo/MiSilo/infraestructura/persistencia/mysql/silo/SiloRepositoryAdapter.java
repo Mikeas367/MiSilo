@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
-import java.util.Optional;
 
 @Component
 public class SiloRepositoryAdapter implements SiloRepositoryPort {
@@ -37,6 +36,15 @@ public class SiloRepositoryAdapter implements SiloRepositoryPort {
         entidad.setFechaUltimoLLenado(fechaUltimoLLenado);
 
         siloJPARepository.save(entidad);
+    }
+
+    public long contar() {
+        return siloJPARepository.count();
+    }
+
+    @Override
+    public void guardar(Silo silo) {
+        siloJPARepository.save(SiloMapper.fromDominioToEntidad(silo));
     }
 
 

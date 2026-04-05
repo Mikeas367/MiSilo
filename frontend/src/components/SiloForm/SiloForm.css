@@ -1,0 +1,48 @@
+/* Colores y Variables */
+:root {
+  --jd-green: #367c2b;
+  --jd-yellow: #ffde00;
+  --jd-black: #27251f;
+}
+
+/* Etiquetas */
+.label-jd {
+  color: #6c757d;
+  letter-spacing: 1px;
+}
+
+/* Input especial con borde inferior verde al hacer foco */
+.input-jd {
+  border-bottom: 2px solid #dee2e6 !important;
+  transition: border-color 0.3s ease;
+}
+
+.input-jd:focus {
+  border-bottom: 2px solid var(--jd-green) !important;
+  color: var(--jd-green);
+}
+
+/* Botón Amarillo John Deere (Reutilizado) */
+.btn-jd-yellow {
+  background-color: var(--jd-yellow) !important;
+  border-color: var(--jd-yellow) !important;
+  color: var(--jd-black) !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-jd-yellow:hover {
+  background-color: #f5d000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+/* Link de cancelar */
+.hover-link:hover {
+  color: var(--jd-black) !important;
+  font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

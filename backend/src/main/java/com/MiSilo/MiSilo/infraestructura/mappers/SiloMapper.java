@@ -14,4 +14,8 @@ public class SiloMapper {
         LocalDateTime ultimaFechaLLenado = siloEnDb.getfechaUltimoLLenado();
         return new Silo(id, kilosMax, kilosContenido, ultimaFechaLLenado);
     }
+
+    public static SiloEntidad fromDominioToEntidad(Silo silo) {
+        return new SiloEntidad(silo.getKilosMax(), silo.getContenidoEnSilo(), silo.getFechaUltimoLLenado());
+    }
 }

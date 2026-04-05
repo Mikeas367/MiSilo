@@ -20,6 +20,20 @@ export const SideBar = () =>  {
                     Silo  <i className="bi bi-database-fill"></i> 
                 </Link>
             </li>
+
+            {/* pedido */}
+            <li className='nav-item'>
+                <Link to="/nuevo-pedido" className='nav-link'>
+                    Nuevo Pedido 
+                </Link>
+            </li>
+
+            {/* Listado de pedidos */}
+            <li className='nav-item'>
+                <Link to="/pedidos" className='nav-link'>
+                    Pedidos 
+                </Link>
+            </li>
         </ul>
         
     </div>  

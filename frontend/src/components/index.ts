@@ -1,3 +1,5 @@
 export * from "./SideBar/SideBar.tsx"
 export * from "./Silo/SiloComponent.tsx"
 export * from "./SiloForm/SiloForm.tsx"
+export * from "./PedidoForm/PedidoForm.tsx"
+export * from "./PedidoList/PedidoList.tsx"

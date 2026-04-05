@@ -1,0 +1,72 @@
+:root {
+  --jd-green: #367c2b;
+  --jd-yellow: #ffde00;
+  --jd-black: #27251f;
+}
+
+/* Barra lateral de título */
+.jd-accent-bar {
+  width: 6px;
+  height: 32px;
+  background-color: var(--jd-yellow);
+  border-radius: 10px;
+}
+
+/* Etiquetas */
+.jd-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #888;
+  letter-spacing: 1.5px;
+}
+
+/* BOTÓN AMARILLO UNIFICADO (Para Añadir y Confirmar) */
+.btn-jd-yellow {
+  background-color: var(--jd-yellow) !important;
+  color: var(--jd-black) !important;
+  border: none !important;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn-jd-yellow:hover:not(:disabled) {
+  background-color: #f5d000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+.btn-jd-yellow:disabled {
+  background-color: #eee !important;
+  color: #aaa !important;
+  cursor: not-allowed;
+}
+
+/* Badge de Unidades (Verde JD) */
+.bg-jd-green {
+  background-color: var(--jd-green) !important;
+  color: white !important;
+  border-radius: 6px;
+  min-width: 85px;
+  text-align: center;
+}
+
+/* Inputs */
+.jd-input {
+  border: 2px solid #eee !important;
+  border-radius: 8px !important;
+  padding: 12px;
+}
+
+.jd-input:focus {
+  border-color: var(--jd-green) !important;
+  box-shadow: none !important;
+}
+
+.border-bottom-dashed {
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.jd-link:hover {
+  color: var(--jd-green) !important;
+}

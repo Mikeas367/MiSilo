@@ -1,0 +1,70 @@
+/* Variables de Color Actualizadas con un verde más fuerte */
+:root {
+  --jd-green: #367c2b; /* Verde John Deere Principal */
+  --jd-dark-green: #295c20; /* Verde más oscuro para mejor contraste si es necesario */
+  --jd-yellow: #ffde00;
+  --jd-black: #27251f;
+  /* El verde claro original lo guardamos para otros usos si quieres */
+  --jd-light-green-alt: rgba(54, 124, 43, 0.15); 
+}
+
+/* Encabezado de tabla con el verde oficial y texto blanco nítido */
+.jd-table-header {
+  background-color: var(--jd-green);
+  color: white;
+}
+
+.jd-table-header th {
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border: none;
+  padding: 16px 12px;
+}
+
+/* Divisor decorativo junto al título */
+.jd-divider-vertical {
+  width: 5px;
+  height: 36px;
+  background-color: var(--jd-yellow);
+  border-radius: 4px;
+}
+
+/* NUEVA CLASE PARA EL BADGE DE KILOS (Mayor contraste) */
+.bg-jd-green {
+  background-color: var(--jd-green) !important;
+  color: white !important;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+/* Píldoras de detalle (Refinadas, como en tu imagen pero con más contraste) */
+.jd-detail-pill {
+  background-color: #fcfcfc;
+  border: 1px solid #e9ecef;
+  border-left: 3px solid var(--jd-yellow);
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  color: #555; /* Texto oscuro pero suave */
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.03);
+}
+
+/* Hover en las filas, sutil */
+.table-hover tbody tr:hover {
+  background-color: #fbfbfb !important;
+  transition: background-color 0.15s ease;
+}
+
+/* Limpieza de bordes internos */
+.border-bottom-light {
+  border-bottom: 1px solid #f1f1f1 !important;
+}
+
+.table td {
+  padding: 16px 12px;
+}

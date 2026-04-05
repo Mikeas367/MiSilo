@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { SideBar, SiloComponent, SiloForm } from './components'
+import { PedidoForm, PedidoList, SideBar, SiloComponent, SiloForm } from './components'
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -14,7 +14,9 @@ function App() {
         <Routes>
           <Route path="/"element={<h1>Bienvenido</h1>}></Route>
           <Route path="/silo" element={<SiloComponent/>}></Route>
+          <Route path="/pedidos" element={<PedidoList/>}></Route>
           <Route path="/llenar-silo" element={<SiloForm/>}></Route>
+          <Route path="/nuevo-pedido" element={<PedidoForm/>}></Route>
         </Routes>
       </div>
     </Router>
