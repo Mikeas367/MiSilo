@@ -1,4 +1,4 @@
-const apiBaseUrl = 'http://localhost:8080/api'
+const apiBaseUrl = import.meta.env.VITE_API_URL
 
 export const apiRoutes = {
     SILO:{

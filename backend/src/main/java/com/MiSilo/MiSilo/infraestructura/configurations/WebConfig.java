@@ -11,7 +11,8 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")  // Define el patrón de URL para los endpoints que deberían permitir CORS
-                .allowedOrigins("http://localhost:5173", "http://localhost:3000")  // Permite solicitudes desde el frontend OJO CON EL PUERTO, CAMBIA!!!!
+                .allowedOrigins("http://localhost:5173", "http://localhost:3000","http://192.168.1.15:81",
+                        "http://192.168.1.120:81", "http://192.168.1.120", "http://100.117.29.97:81", "https://mi-silo-front.vercel.app")  // Permite solicitudes desde el frontend OJO CON EL PUERTO, CAMBIA!!!!
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")  // Métodos permitidos
                 .allowedHeaders("*");  // Permite todos los encabezados
     }
