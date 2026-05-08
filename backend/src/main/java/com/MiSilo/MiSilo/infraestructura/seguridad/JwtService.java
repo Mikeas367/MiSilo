@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-// XVUmZ5QwxnQMxVDDR2uuGkcbabJ7rMpf
 @Component
 public class JwtService {
     private final String SECRET = "XVUmZ5QwxnQMxVDDR2uuGkcbabJ7rMpf";

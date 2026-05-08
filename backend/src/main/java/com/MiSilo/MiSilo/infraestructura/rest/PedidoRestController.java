@@ -1,7 +1,7 @@
 package com.MiSilo.MiSilo.infraestructura.rest;
 
-import com.MiSilo.MiSilo.casosDeUso.Pedidos.IBuscarPedidosInteractor;
-import com.MiSilo.MiSilo.casosDeUso.Pedidos.INuevoPedidoInteractor;
+import com.MiSilo.MiSilo.casosDeUso.Pedidos.abmc.IBuscarPedidosInteractor;
+import com.MiSilo.MiSilo.casosDeUso.Pedidos.abmc.INuevoPedidoInteractor;
 import com.MiSilo.MiSilo.dominio.modelos.DetallePedido;
 import com.MiSilo.MiSilo.dominio.modelos.Pedido;
 import com.MiSilo.MiSilo.infraestructura.DTO.DetallePedidoDTO;

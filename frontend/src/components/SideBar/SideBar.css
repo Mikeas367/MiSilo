@@ -32,3 +32,14 @@
     padding: 5px 10px;
     font-size: 1.5rem;
 }
+
+/* Selecciona los enlaces dentro de la sidebar */
+.sidebar .nav-link {
+    color: white; /* Cambia el azul por blanco */
+    text-decoration: none; /* Quita el subrayado si lo tiene */
+}
+
+/* Cambia el color cuando pasas el mouse (opcional pero recomendado) */
+.sidebar .nav-link:hover {
+    color: #adb5bd; /* Un gris claro para el efecto hover */
+}

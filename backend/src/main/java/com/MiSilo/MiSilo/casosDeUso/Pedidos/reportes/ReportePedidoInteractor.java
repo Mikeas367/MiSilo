@@ -1,4 +1,4 @@
-package com.MiSilo.MiSilo.casosDeUso.Pedidos;
+package com.MiSilo.MiSilo.casosDeUso.Pedidos.reportes;
 
 import com.MiSilo.MiSilo.dominio.modelos.Pedido;
 import com.MiSilo.MiSilo.dominio.repositorios.PedidoRepositoryPort;
@@ -8,17 +8,16 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class BucarPedidosInteractor implements IBuscarPedidosInteractor{
+public class ReportePedidoInteractor implements IReportePedidoInteractor {
     @Autowired
     private final PedidoRepositoryPort pedidoRepositoryPort;
 
-    public BucarPedidosInteractor(PedidoRepositoryPort pedidoRepositoryPort) {
+    public ReportePedidoInteractor(PedidoRepositoryPort pedidoRepositoryPort) {
         this.pedidoRepositoryPort = pedidoRepositoryPort;
     }
 
-
     @Override
-    public List<Pedido> buscarPedidos() {
-        return pedidoRepositoryPort.buscarTodosPedidos();
+    public List<Pedido> reportePedidosKilosTotalesPorMes() {
+        return List.of();
     }
 }

@@ -1,0 +1,111 @@
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #367c2b 0%, #1e4618 100%) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: #FFDE00 !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: #FFDE00 !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover general */
+.nav-item:hover .nav-link {
+    background-color: #FFDE00 !important;
+    color: #224d1b !important;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 992px) {
+    /* El contenedor que envuelve Logo + Botón + Links */
+    .navbar .container-fluid {
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* El contenedor de la lista de links */
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        flex-direction: column !important;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+        width: 100%;
+        margin-top: 1rem; /* Espacio opcional entre el título y los links */
+        height: 100vh;
+    }
+
+    /* Aseguramos que cada link ocupe su propia fila */
+    .nav-item {
+        width: 100%;
+        text-align: left;
+        border-radius: 8;
+        margin-bottom: 5px;
+        transition: all 0.4s ease;
+    }
+
+    .nav-item:hover .nav-link{
+        border-radius: 8px;
+        background-color: #FFDE00; 
+        color: #224d1b;
+        transform: translateX(5px);
+        
+    }
+
+    .navbar-brand {
+        margin: bottom 0;;
+        margin-left: 0;
+    }
+
+    .navbar {
+        background-color: #367c2b; /* El verde que estás usando en el hover */
+        background: linear-gradient(180deg, #367c2b 0%, #224d1b 100%); /* Opcional: un degradado sutil */
+        min-height: 100vh;
+        width: 250px; /* Ajusta el ancho de tu barra lateral */
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #FFDE00;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 2rem !important;
+        width: 100%;
+    }
+    .nav-link i {
+        font-size: 1.2rem;
+        margin-right: 12px;
+    }
+
+    .nav-link {
+        color: #FFDE00; /* Amarillo por defecto */
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        padding: 0.8rem 1.2rem !important;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+

@@ -1,4 +1,4 @@
-package com.MiSilo.MiSilo.casosDeUso.Pedidos;
+package com.MiSilo.MiSilo.casosDeUso.Pedidos.abmc;
 
 import com.MiSilo.MiSilo.dominio.modelos.Pedido;
 

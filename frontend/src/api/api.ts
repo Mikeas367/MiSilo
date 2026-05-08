@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const apiBaseUrl = 'http://localhost:8080/api'
+const apiBaseUrl = import.meta.env.VITE_API_URL || "http://localhost:8080/api"
 
 // voy a crear una istancia "Personalizada" de axios en la cual voy a poder usar el envio de tokens automaticos
 
@@ -22,12 +22,18 @@ api.interceptors.request.use((config)=>{
 
 export const apiRoutes = {
     SILO:{
-        OBTENER_SILO: `/silo`,
-        LLENAR_SILO: (cantidadAAñadir: number) => `/silo/llenar-silo/${cantidadAAñadir}`, 
+        OBTENER_SILO: `${apiBaseUrl}/silo`,
+        LLENAR_SILO: (cantidadAAñadir: number) => `${apiBaseUrl}/silo/llenar-silo/${cantidadAAñadir}`, 
     },
     PEDIDO:{
-        NUEVO_PEDIDO: `/pedidos/nuevo-pedido`,
-        OBTENER_TODOS_PEDIDOS: `/pedidos`
+        NUEVO_PEDIDO: `${apiBaseUrl}/pedidos/nuevo-pedido`,
+        OBTENER_TODOS_PEDIDOS: `${apiBaseUrl}/pedidos`
+    },
+    LOGIN:{
+        INICIAR_SESION: `${apiBaseUrl}/auth/login`
+    },
+    PRECIO_PIZARRA:{
+        OBTENER_PRECIO_PIZARRA: `${apiBaseUrl}/precio-pizarra`
     }
     
 }

@@ -1,0 +1,6 @@
+SELECT 
+    MONTH(p.fecha_pedido) as 'Mes',
+    SUM(p.total_kilos) as 'Total Kilos'
+FROM pedidos as p 
+JOIN detalle_pedidos as dp ON dp.pedido_id = p.id
+GROUP BY MONTH(p.fecha_pedido);

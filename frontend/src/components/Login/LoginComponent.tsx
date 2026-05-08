@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { iniciarSesion } from '../../api/services';
 import type { Usuario } from '../../models';
+import './login.css';
 
 export const LoginComponent = () => {
     const [credentials, setCredentials] = useState<Usuario>({ username: '', password: '' });
@@ -38,34 +39,58 @@ export const LoginComponent = () => {
     };
 
     return (
-        <div style={{ maxWidth: '300px', margin: '50px auto' }}>
-            <h2>Login MiSilo</h2>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Usuario:</label>
-                    <input 
-                        type="text" 
-                        name="username" 
-                        value={credentials.username} 
-                        onChange={handleChange} 
-                        required 
-                    />
+       <div className="login-container">
+            <div className="login-card">
+                <div className="login-header">
+                    Inicio de Sesión
                 </div>
-                <div style={{ marginTop: '10px' }}>
-                    <label>Contraseña:</label>
-                    <input 
-                        type="password" 
-                        name="password" 
-                        value={credentials.password} 
-                        onChange={handleChange} 
-                        required 
-                    />
-                </div>
-                {error && <p style={{ color: 'red' }}>{error}</p>}
-                <button type="submit" style={{ marginTop: '20px', width: '100%' }}>
-                    Ingresar
-                </button>
-            </form>
+                
+                <form className="login-body" onSubmit={handleSubmit}>
+                    {/* Campo Usuario */}
+                    <div className="input-group mb-4">
+                        <span className="input-group-text bg-transparent border-0">
+                            <i className="bi bi-person-fill"></i>
+                        </span>
+                        <input 
+                            type="text" 
+                            className="form-control custom-input"
+                            placeholder="Usuario"
+                            name="username" 
+                            value={credentials.username} 
+                            onChange={handleChange} 
+                            required 
+                        />
+                    </div>
+
+                    {/* Campo Contraseña */}
+                    <div className="input-group mb-4">
+                        <span className="input-group-text bg-transparent border-0">
+                            <i className="bi bi-lock-fill"></i>
+                        </span>
+                        <input 
+                            type="password" 
+                            className="form-control custom-input"
+                            placeholder="Contraseña"
+                            name="password" 
+                            value={credentials.password} 
+                            onChange={handleChange} 
+                            required 
+                        />
+                    </div>
+
+                    {error && (
+                        <div className="alert alert-danger py-2 text-center" role="alert">
+                            <small>{error}</small>
+                        </div>
+                    )}
+
+                    <div className="text-center mt-4">
+                        <button type="submit" className="btn btn-login">
+                            Iniciar sesión
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };

@@ -1,4 +1,5 @@
 export * from "./Silo.ts"
-export * from "./DetallePedido.ts"
-export * from "./Pedido.ts"
+export * from "./pedido/DetallePedido.ts"
+export * from "./pedido/Pedido.ts"
 export * from "./Usuario.ts"
+export * from "./preciopizarra/PrecioPizarra.ts"
