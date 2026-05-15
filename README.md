@@ -20,23 +20,23 @@ La aplicacion se divide en 2 partes:
 ## ScreenShoots 📷✨
 Login del sistema, solo se hace con un usuario y contraseña.
 
-![Login de Mi Silo.](./docs/assets/LoginMiSiloCaptura.png")
+![Login de Mi Silo.](./docs/assets/LoginMiSiloCaptura.png)
 
 Informacion del silo, en esta pantalla se nos muestra informacion relacionada al silo como cantidad actual de maiz con una y el ultimo llenado del silo. Ademas nos permite añadir más contenido al silo.
 
-![Info del silo.](./docs/assets/SiloInfoCaptura.png")
+![Info del silo.](./docs/assets/SiloInfoCaptura.png)
 
 
 Aqui el sistema nos permite indicar la cantidad de maiz a añadir al silo.
 
-![Agregar maiz al silo.](./docs/assets/AgregarContenidoSoloCaptura.png")
+![Agregar maiz al silo.](./docs/assets/AgregarContenidoSoloCaptura.png)
 
 
 Se selecciona el tipo de bolsa de maiz a crear y se indica la cantidad de bolsas de ese tipo, luego se agrega a un "carrito" perimitiendo generar más de un tipo de bolsa.
 
-![Nuevo Pedido.](/docs/assets/NuevoPedidoCaptura.png")
+![Nuevo Pedido.](/docs/assets/NuevoPedidoCaptura.png)
 
 
 El sistema nos permite visualizar los pedidos que se fueron realizando, y nos indica la cantidad total de kilos que se quitaron del silo, asi como tambien los tipos y cantidades de bolsa que se hicieron.
 
-![Listado de pedidos.](/docs/assets/ListadoPedidosCaptura.png")
+![Listado de pedidos.](/docs/assets/ListadoPedidosCaptura.png)
